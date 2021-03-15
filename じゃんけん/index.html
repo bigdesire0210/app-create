@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>じゃんけんゲーム</title>
+</head>
+
+<body>
+    <h1>じゃんけんゲーム</h1>
+
+    <div id="message1">あいての手</div>
+
+    <div id="message2">結果</div>
+
+    <form>
+        <select id="myHand">
+            <option id="gu">グー</option>
+            <option id="tyoki">チョキ</option>
+            <option id="pa">パー</option>
+        </select>
+
+        <input type="button" value="決定" onclick="Janken()">
+    </form>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+
+
+
+<!-- 
+    要件定義
+    ・3つのセレクトボタンを作成
+    ・そのボタンごとに「グー」「チョキ」「パー」を作成
+    ・ボタンを押したときに相手が「グー」「チョキ」「パー」のいずれかをランダムで出力
+      ・グー＝０、チョキ＝１、パー＝２として、それぞれに対応した勝ち負けあいこの場合分け
+
+    ・自分が選択したボタンごとに勝った時、負けた時、あいこの時の条件設定
+    ・条件によって何かしらの表示をする
+     -->
