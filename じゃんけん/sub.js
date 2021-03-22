@@ -29,3 +29,8 @@ function janken() {
     document.getElementById("message1").innerHTML = 'あいての手' + handTxt[cpuNumber];
     document.getElementById("message2").innerHTML = '結果' + resultText;
 }
+
+//　結果を関数化した。勝敗を考える際に、引き算を用いて条件を述べるのではなく、数字を指定してあげることで仮に
+//　数字が変わった際にも対応しやすくなっている。
+//　数字をキーにしたオブジェクトを作成し、その中に「グー」「チョキ」「パー」の文字列を入れた。
+//　
