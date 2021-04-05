@@ -4,14 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
     <title>サイコロ</title>
 </head>
 
 <body>
     <h1>サイコロを振ってください！</h1>
-    <a href="JavaScript:change()">
-        <img src="saikoro1.png" name="saikoro" width=300 height=300>
-    </a>
+    <!-- <a href="JavaScript:change()">
+        <img src="rittai0.gif" name="saikoro" width=300 height=300>
+    </a> -->
+
+    <input type="button" value="START" id="start" onclick="change(this)" />
+
+    <input type="button" value="STOP" id="stop" onclick="change(this)" />
+
+    <p><span id="innerDice"></span></p>
 
     <script src="main.js"></script>
 </body>
